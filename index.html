@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skeye – Your eye in the sky</title>
+<meta name="description" content="Skeye is a web-based geospatial analytics service using AI and remote sensing.">
+<link rel="icon" href="assets/logo-blue.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Skeye home"><img src="assets/logo-blue.svg" alt="Skeye" width="115.5" height="37.95"></a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+    <nav aria-label="Primary">
+      <ul id="menu">
+        <li><a href="#top" aria-current="page">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#compare">Research</a></li>
+        <li><a href="#faq">Pricing</a></li>
+        <li><a class="btn btn-primary btn-sm" href="#get-started">Get Started</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div id="top" class="hero">
+    <canvas id="globe" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <h1>Your eye in<br>the sky</h1>
+      <p>We offer a web-based geospatial analytics service using AI and remote sensing.</p>
+      <div class="actions">
+        <a class="btn btn-white" href="#get-started">Get Started</a>
+        <a class="btn btn-ghost" href="#about">Learn More</a>
+      </div>
+      <div class="hero-support"><span>Supported by</span><img src="assets/esa-logo.svg" alt="European Space Agency (ESA)" width="101" height="39"></div>
+    </div>
+  </div>
+
+  <section id="features">
+    <div class="wrap features">
+      <div>
+        <p class="label">Platform</p>
+        <h2>Effortlessly search your satellite images.</h2>
+        <div class="feature-list">
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.2-4.2"/></svg></div>
+            <h3>Advanced Object Recognition</h3>
+            <p>Use satellite imagery and AI to monitor land use, vegetation, and environmental change.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+            <h3>Powerful Analytics</h3>
+            <p>Extract data and generate reports that support confident decision-making.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg></div>
+            <h3>Intuitive Map Interface</h3>
+            <p>Select areas of interest and visualise your data on an interactive map.</p>
+          </div>
+          <div class="feature">
+            <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></div>
+            <h3>Flexible Satellite Options</h3>
+            <p>Analyse your own imagery or choose from Skeye's image library.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sat" role="img" aria-label="Satellite image with detected objects highlighted">
+        <div class="box b1"><b>Field</b></div>
+        <div class="box b2"><b>Solar panels</b></div>
+        <div class="box b3"><b>Reservoir</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap grid">
+      <div>
+        <p class="label">About Skeye</p>
+        <h2>Insights from above, in plain sight.</h2>
+      </div>
+      <div>
+        <p>Skeye is a geospatial analytics platform that turns satellite imagery into clear, usable insight. Our AI detects and locates objects on the ground, so you can see what matters without needing a remote sensing background.</p>
+        <div class="chips" aria-label="Detectable objects">
+          <span>Fields</span><span>Stadiums</span><span>Bridges</span><span>Solar panels</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="get-started" class="cta">
+    <div class="wrap">
+      <div class="cta-card">
+        <h2>Get Started</h2>
+        <p>Tell us about your project and our team will be in touch to set you up.</p>
+        <a class="btn btn-white" href="mailto:info@myskeye.com">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="video" class="video-sec">
+    <div class="wrap">
+      <p class="label">Watch</p>
+      <h2>See Skeye in action</h2>
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/NaiIKMC3CBM" title="Skeye video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="industries">
+    <div class="wrap">
+      <div class="industries-head">
+        <div>
+          <p class="label">Industries</p>
+          <h2 style="margin:0">Built for the way you work.</h2>
+        </div>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/img/agriculture.png" alt="Aerial view of farmland with crop health overlay" width="768" height="480" loading="lazy">
+          <div class="card-body">
+          <h3 style="--c:#D99A00"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V9M12 13c-4 0-6-2-6-6 4 0 6 2 6 6zM12 16c4 0 6-2 6-6-4 0-6 2-6 6z"/></svg>Agriculture</h3>
+          <p>Track crop health, optimise irrigation, and predict yield.</p>
+          <a href="#">Learn More <span>→</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/img/construction.jpg" alt="Satellite view of a construction site in a city" width="768" height="480" loading="lazy">
+          <div class="card-body">
+          <h3 style="--c:#F26B1D"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M6 21V8l6-4 6 4v13M10 21v-5h4v5"/></svg>Construction</h3>
+          <p>Streamline operations and decision-making across your sites.</p>
+          <a href="#">Learn More <span>→</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/img/port.png" alt="Aerial view of a container ship and port terminal" width="768" height="480" loading="lazy">
+          <div class="card-body">
+          <h3 style="--c:#0B8FB5"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M12 7v14M5 12H3a9 9 0 0 0 18 0h-2M8 10h8"/></svg>Port Operations</h3>
+          <p>Monitor vessels, manage cargo handling, and predict traffic.</p>
+          <a href="#">Learn More <span>→</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/img/environment.png" alt="Satellite comparison of a flooded river region, August 2021 and August 2022" width="768" height="480" loading="lazy">
+          <div class="card-body">
+          <h3 style="--c:#0F9D8A"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>Environmental Monitoring</h3>
+          <p>Detect deforestation and disaster damage, and protect habitats.</p>
+          <a href="#">Learn More <span>→</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/img/forestry.png" alt="Aerial view of a forested mountain landscape" width="768" height="480" loading="lazy">
+          <div class="card-body">
+          <h3 style="--c:#2E7D4F"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-6 8h3l-4 6h14l-4-6h3zM12 17v4"/></svg>Forestry</h3>
+          <p>Count trees, assess forest health, and forecast growth.</p>
+          <a href="#">Learn More <span>→</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/img/mining.jpg" alt="Aerial view of a mining site with trucks and conveyors" width="768" height="480" loading="lazy">
+          <div class="card-body">
+          <h3 style="--c:#7C5CE0"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 20 6-11 4 6 3-4 5 9zM14 5l2-2 2 2"/></svg>Mining</h3>
+          <p>Follow project progress, resource allocation, and timelines.</p>
+          <a href="#">Learn More <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="compare" class="compare-sec">
+    <div class="wrap compare-grid">
+      <div>
+        <p class="label">Research</p>
+        <h2>Compare satellite imagery and spot what changed</h2>
+        <p class="lead">View two dates, layers, or datasets side by side. No GIS expertise needed.</p>
+        <a class="btn btn-primary" href="#">Explore the Tool</a>
+      </div>
+      <div>
+        <div class="compare" id="cmp">
+          <div class="layer before"></div>
+          <div class="layer after"></div>
+          <span class="tag t1">Before</span><span class="tag t2">After</span>
+          <div class="handle"></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Drag the slider to compare images">
+        </div>
+        <p class="hint">Drag the slider to compare</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap faq-grid">
+      <div>
+        <p class="label">FAQ</p>
+        <h2>Questions, answered.</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>How much does Skeye cost?</summary>
+          <p>Pricing is flexible and based on your project size and data needs. Request a quote and we'll tailor a plan for you.</p>
+        </details>
+        <details>
+          <summary>How do I get started?</summary>
+          <p>Fill in the Get Started form and our team will follow up with next steps.</p>
+        </details>
+        <details>
+          <summary>What makes Skeye different?</summary>
+          <p>An interface that requires no remote sensing, AI, or GIS background. Anyone can explore and act on satellite insight.</p>
+        </details>
+        <details>
+          <summary>How accurate is it?</summary>
+          <p>Our AI models average around 98% accuracy. Results can vary with some imagery, and we'll work with you to improve them.</p>
+        </details>
+        <details>
+          <summary>What objects can Skeye detect?</summary>
+          <p>Fields, stadiums, bridges, pools, airports, solar panels, reservoirs, parking lots, harbours, ships, and vehicles.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img class="logo" src="assets/logo-white.svg" alt="Skeye" width="123.2" height="40.48">
+        <address>229A, St. Julian's Street,<br>B'Kara, Malta, BKR2805</address>
+        <div class="esa"><span>Supported by</span><img src="assets/esa-logo.svg" alt="European Space Agency (ESA)" width="101" height="39"></div>
+      </div>
+      <div>
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="#">Agriculture</a></li><li><a href="#">Construction</a></li><li><a href="#">Port Operations</a></li>
+          <li><a href="#">Environmental Monitoring</a></li><li><a href="#">Forestry</a></li><li><a href="#">Mining</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore More</h4>
+        <ul>
+          <li><a href="#">Earth Observation Glossary</a></li><li><a href="#compare">Compare Satellite Images</a></li><li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@myskeye.com">info@myskeye.com</a></li>
+          <li><a href="tel:+35699853658">+356 9985 3658</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal"><span>© 2026 Skeye</span><a href="#">Privacy &amp; Cookie Policy</a></div>
+  </div>
+</footer>
+
+<script src="js/globe.js"></script>
+<script type="module" src="js/earth.js"></script>
+<script>
+const btn=document.querySelector('.menu-btn'),menu=document.getElementById('menu');
+btn.addEventListener('click',()=>{const o=menu.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+menu.addEventListener('click',e=>{if(e.target.closest('a')){menu.classList.remove('open');btn.setAttribute('aria-expanded',false)}});
+// highlight the nav tab for the section in view
+const tabs=[...menu.querySelectorAll('a:not(.btn)')];
+const spy=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  const id=e.target.id||'top';
+  tabs.forEach(t=>t.getAttribute('href')==='#'+id?t.setAttribute('aria-current','page'):t.removeAttribute('aria-current'));
+}),{rootMargin:'-45% 0px -50% 0px'});
+tabs.forEach(t=>{const s=document.querySelector(t.getAttribute('href'));if(s)spy.observe(s)});
+const cmp=document.getElementById('cmp');
+cmp.querySelector('input').addEventListener('input',e=>cmp.style.setProperty('--pos',e.target.value+'%'));
+</script>
+</body>
+</html>
