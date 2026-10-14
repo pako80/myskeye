@@ -21,6 +21,7 @@ assets/brand/       standalone SVGs: dotted globe (globe-dots-*) and logo mark (
 ## Notes
 
 - **Colours:** Blue `#0064FF`, hover `#3383FF`, charcoal `#333334`, slate `#6C6E72`, light `#EDF0F0`.
+- **Hero:** a pink-to-blue gradient (`--grad-a` `#E95270` to `--grad-b` `#0064FF`, set at the top of `css/styles.css`). It changes to a dark space background when the Earth appears.
 - **Fonts:** Geist for body, nav and buttons; Outfit for `h1`/`h2`. Both load from Google Fonts. To revert everything to Outfit, set `--font-body: var(--font-display)` at the top of `css/styles.css`.
 - **External resources:** the Earth in the hero loads three.js and its textures from unpkg at runtime (about 0.9 MB). If they fail to load, the dotted globe simply stays. For production, copy them into the project and update the URLs in `js/earth.js`. The video section embeds YouTube (`youtube-nocookie.com`).
 - **Reduced motion:** with `prefers-reduced-motion`, the hero shows the static dotted globe.

@@ -72,17 +72,6 @@
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, W, H);
 
-    // atmosphere glow, fades in as we leave the surface
-    const appR = f / Math.sqrt(D * D - 1);
-    const glow = ctx.createRadialGradient(cx, cy, appR * 0.8, cx, cy, appR * 1.25);
-    glow.addColorStop(0, `rgba(255,255,255,${0.16 * e})`);
-    glow.addColorStop(1, 'rgba(255,255,255,0)');
-    ctx.fillStyle = glow; ctx.beginPath(); ctx.arc(cx, cy, appR * 1.25, 0, 7); ctx.fill();
-    // globe body
-    const body = ctx.createRadialGradient(cx - appR * 0.3, cy - appR * 0.35, appR * 0.1, cx, cy, appR);
-    body.addColorStop(0, 'rgba(51,131,255,0.55)'); body.addColorStop(1, 'rgba(0,70,200,0.35)');
-    ctx.fillStyle = body; ctx.beginPath(); ctx.arc(cx, cy, appR, 0, 7); ctx.fill();
-
     // project
     const P = new Array(N);
     const horizon = 1 / D;

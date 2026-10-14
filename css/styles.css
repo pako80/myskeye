@@ -1,6 +1,8 @@
 :root{
   --blue:#0064FF;
   --blue-hover:#3383FF;
+  --grad-a:#E95270;   /* hero gradient start */
+  --grad-b:#0064FF;   /* hero gradient end */
   --charcoal:#333334;
   --slate:#6C6E72;
   --light:#EDF0F0;
@@ -51,7 +53,7 @@ a{color:inherit;text-decoration:none}
 .menu-btn span::before{top:-7px}.menu-btn span::after{top:7px}
 
 /* Hero */
-.hero{background:var(--blue);color:#fff;position:relative;overflow:hidden;isolation:isolate;--space:0}
+.hero{background:linear-gradient(to bottom left,var(--grad-a),var(--grad-b));color:#fff;position:relative;overflow:hidden;isolation:isolate;--space:0}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:var(--space);background:
   radial-gradient(1.2px 1.2px at 12% 22%,#fff,transparent 100%),
   radial-gradient(1px 1px at 28% 78%,#fff,transparent 100%),
@@ -64,7 +66,7 @@ a{color:inherit;text-decoration:none}
   radial-gradient(1px 1px at 95% 55%,#fff,transparent 100%),
   radial-gradient(900px 600px at 72% 55%,#0b2a66 0%,#071a40 45%,#030a1c 100%)}
 .hero::before{content:"";position:absolute;inset:0;opacity:calc(1 - var(--space));background:
-  radial-gradient(600px 400px at 85% 20%,rgba(51,131,255,.55),transparent 70%)}
+  radial-gradient(600px 400px at 85% 20%,rgba(255,255,255,.14),transparent 70%)}
 .hero canvas{position:absolute;inset:0;pointer-events:none}
 .hero .wrap{position:relative;z-index:1;padding-top:clamp(80px,10vw,150px);padding-bottom:clamp(80px,10vw,150px);min-height:calc(100vh - 77px);min-height:calc(100svh - 77px)}
 @media(max-width:900px){.hero .wrap{padding-bottom:min(80vw,460px)}}
@@ -90,17 +92,13 @@ h3{font-weight:500;font-size:20px;line-height:1.3;margin-bottom:8px}
 .feature .ico svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .feature h3{font-weight:600}
 .feature p{color:var(--slate-text);font-size:16px}
-.sat{aspect-ratio:4/5;border-radius:var(--radius);position:relative;overflow:hidden;background:
-  radial-gradient(circle at 30% 25%,#5d7d5a 0 10%,transparent 11%),
-  radial-gradient(circle at 70% 60%,#7f9a76 0 14%,transparent 15%),
-  linear-gradient(135deg,#2c4a3a,#46644a 40%,#8a9a6c 70%,#b9a77a)}
-.sat::before{content:"";position:absolute;inset:0;background:
-  repeating-linear-gradient(35deg,rgba(255,255,255,.07) 0 22px,rgba(0,0,0,.07) 22px 44px)}
-.sat .box{position:absolute;border:2px solid #fff;border-radius:4px;background:rgba(0,100,255,.18)}
+.sat{border-radius:var(--radius);position:relative;overflow:hidden;background:var(--charcoal)}
+.sat>img{display:block;width:100%;height:auto}
+.sat .box{position:absolute;border:2px solid #fff;border-radius:4px;background:rgba(0,100,255,.14)}
 .sat .box b{position:absolute;top:-24px;left:-2px;background:var(--blue);color:#fff;font:500 12px/1 var(--font-body);padding:5px 8px;border-radius:4px}
-.sat .b1{left:12%;top:22%;width:34%;height:20%}
-.sat .b2{right:10%;top:52%;width:30%;height:16%}
-.sat .b3{left:26%;bottom:10%;width:22%;height:12%}
+.sat .b1{left:5.4%;top:13%;width:44.4%;height:23.4%}      /* field */
+.sat .b2{left:63.4%;top:25.6%;width:25.6%;height:21.4%}   /* solar panels */
+.sat .b3{left:55.6%;top:49.6%;width:33.4%;height:17.8%}   /* reservoir */
 
 /* About band */
 .about{background:var(--charcoal);color:#fff}
@@ -187,7 +185,7 @@ footer a:hover{color:#fff}
   .features,.about .grid,.compare-grid,.faq-grid{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr 1fr}
   .foot{grid-template-columns:1fr 1fr}
-  .sat{aspect-ratio:16/10}
+  .sat{max-width:520px;margin:0 auto;width:100%}
 }
 @media(max-width:760px){
   .menu-btn{display:block}
