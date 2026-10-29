@@ -57,7 +57,6 @@
     if (!reduce && E && E.ready && mixT0 === null && el > DELAY + INTRO * 0.75) mixT0 = el;
     let mix = mixT0 === null ? 0 : Math.min(1, (el - mixT0) / 2.4);
     mix = mix * mix * (3 - 2 * mix);
-    hero.style.setProperty('--space', mix.toFixed(3));
     const earthState = () => ({ W, H, dpr, f: Rfinal * Math.sqrt(D_END * D_END - 1), dx: homeX - W / 2, dy: homeY - H / 2, D: D_END, yaw, tilt, mix });
     if (mix >= 1) {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, H);
